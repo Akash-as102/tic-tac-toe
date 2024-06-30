@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac_toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="structure">
+        <div id="header"><h1>Tic-Tac-Toe</h1></div>
+        <div id="player_detail">
+            <div id="name_space">
+                <form action="/" method="get" id="get_player_names">
+                    <div id="name_row">
+                        <div id="playerone">
+                            <input type="text" required name="playeronename" placeholder="player1 name" id="playeronename">
+                        </div>
+                        <div id="playertwo">
+                            <input type="text" required name="playertwoname" placeholder="player2 name" id="playertwoname">
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="player_name_bar">
+                <div id="playeronedetail">
+                    <h2 id="playeronenamebar"></h2>
+                    <h3>token:X</h3>
+                </div>
+                <div id="playertwodetail">
+                    <h2 id="playertwonamebar"></h2>
+                    <h3>token:O</h3>
+                </div>
+            </div>
+            <div id="game_reset">
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+        <div id="gameboard">
+            <div class="row">
+                <button id="cell-1" class="cell"></button>
+                <button id="cell-2" class="cell"></button>
+                <button id="cell-3" class="cell"></button>
+            </div>
+            <div class="row">
+                <button id="cell-4" class="cell"></button>
+                <button id="cell-5" class="cell"></button>
+                <button id="cell-6" class="cell"></button>
+            </div>
+            <div class="row">
+                <button id="cell-7" class="cell"></button>
+                <button id="cell-8" class="cell"></button>
+                <button id="cell-9" class="cell"></button>
+            </div>
+        </div>
+        <div id="result">
+            <h3 id="result_statement"></h3>
+        </div>
+    </div>
+</body>
+</html>
